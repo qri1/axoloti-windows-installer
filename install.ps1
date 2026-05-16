@@ -32,4 +32,5 @@ if (Get-Command Unblock-File -ErrorAction SilentlyContinue) {
 }
 
 Write-Host "Starting installer: $downloadPath"
-Start-Process -FilePath "cmd.exe" -ArgumentList "/c", "`"$downloadPath`"" -Wait
+Write-Host "The installer will continue in this console window."
+cmd.exe /k "`"$downloadPath`""
