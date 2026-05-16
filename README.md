@@ -8,5 +8,6 @@ Open PowerShell and run:
 powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/qri1/axoloti-windows-installer/main/install.ps1 | iex"
 ```
 
-The command downloads the latest `Axoloti-OneClick-Setup-SAFE.cmd` release asset
-and runs it.
+The command downloads the latest `Axoloti-Windows-Payload.zip` release asset,
+extracts it to `%LOCALAPPDATA%\Axoloti`, installs/checks dependencies, builds
+Axoloti and creates shortcuts.
